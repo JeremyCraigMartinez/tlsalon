@@ -1,0 +1,24 @@
+dist: trusty
+services:
+  - docker
+language: node_js
+node_js:
+  - "12.3.0"
+before_install:
+    - cd $TRAVIS_BUILD_DIR/app
+install:
+    - npm ci
+before_script:
+    - cd $TRAVIS_BUILD_DIR/app
+script:
+    - npm run lint
+    - npm run flow
+    - npm run build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  local_dir: $TRAVIS_BUILD_DIR/app/build
+  on:
+    branch: master

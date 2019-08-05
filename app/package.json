@@ -12,7 +12,7 @@
   "bugs": {
     "url": "https://github.com/JeremyCraigMartinez/tlsalon/issues"
   },
-  "homepage": "https://github.com/JeremyCraigMartinez/tlsalon#readme",
+  "homepage": "https://tl-salon.net",
   "dependencies": {
     "eslint": "^5.16.0",
     "eslint-config-airbnb": "^17.1.0",

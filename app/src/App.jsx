@@ -1,14 +1,22 @@
 // @flow strict
 
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import Home from './components/home';
 
 function App() {
   return (
-    <div>
+    <Router>
       <header>
-        <p>TL Salon</p>
+        <img className='header' src='/assets/header.jpeg' alt='header' />
       </header>
-    </div>
+      <div className='main'>
+        <Switch>
+          <Route exact path='/' component={Home} />
+        </Switch>
+      </div>
+      <footer />
+    </Router>
   );
 }
 

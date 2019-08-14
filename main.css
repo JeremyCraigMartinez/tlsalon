@@ -1,0 +1,68 @@
+body {
+  margin: unset;
+}
+
+header {
+  height: calc(100vh - 100px);
+  position: sticky;
+}
+
+img.header {
+  width: calc(100vw);
+  bottom: 0;
+  position: absolute;
+}
+
+p {
+  margin: unset;
+}
+
+.main {
+}
+
+footer {
+  height: 100px;
+  background-color: rgb(255, 243, 255);
+}
+
+table {
+  width: 100%;
+  border-spacing: unset;
+}
+
+th {
+  height: 200px;
+  width: 33%;
+}
+
+.basic-tile {
+  width: 100%;
+  height: 100px;
+  position: sticky;
+}
+
+.basic-tile p {
+  bottom: 40%;
+  left: 44%;
+  position: absolute;
+  font-size: 2em;
+  color: grey;
+  text-decoration: none;
+}
+
+.scroll-box {
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+}
+
+#info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-size: 2em;
+}
+
+.link {
+  cursor: pointer;
+}

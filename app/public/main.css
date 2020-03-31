@@ -2,22 +2,14 @@ body {
   margin: unset;
 }
 
-header {
-  height: calc(100vh - 100px);
-  position: sticky;
-}
-
 img.header {
   width: calc(100vw);
   bottom: 0;
-  position: absolute;
+  max-height: calc(100vh - 100px);
 }
 
 p {
   margin: unset;
-}
-
-.main {
 }
 
 footer {

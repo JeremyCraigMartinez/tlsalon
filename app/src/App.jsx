@@ -7,9 +7,7 @@ import Home from './components/home';
 function App() {
   return (
     <Router>
-      <header>
-        <img className='header' src='/assets/header.jpeg' alt='header' />
-      </header>
+      <img className='header' src='/assets/header.jpeg' alt='header' />
       <div className='main'>
         <Switch>
           <Route exact path='/' component={Home} />
